@@ -1,0 +1,17 @@
+[package]
+name = "file_upload_service"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = { version = "0.7.5", features = ["json", "multipart", "macros"] }
+axum-extra = "0.9.3"
+tokio = { version = "1", features = ["full"] }
+headers = "0.4.0"
+jsonwebtoken = "9.3.0"
+mongodb = "3.1.0"
+dotenvy = "0.15"
+thiserror = "1.0"
+futures-util = "0.3"
+async-trait = "0.1.51"
+serde = { version = "1.0", features = ["derive"] }
